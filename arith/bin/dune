@@ -1,0 +1,9 @@
+(executable
+ (public_name arith)
+ (name main)
+ (libraries arith angstrom))
+
+; (env
+;  (dev
+;   (flags
+;    (:standard -warn-error -A))))

@@ -1,0 +1,9 @@
+(library
+ (name arith)
+ (libraries angstrom)
+ (preprocess (pps ppx_deriving.show)))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
