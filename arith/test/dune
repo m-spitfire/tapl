@@ -1,2 +1,4 @@
 (test
- (name arith))
+ (name arith)
+ (modules arith)
+ (libraries arith alcotest))

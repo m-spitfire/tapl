@@ -1,3 +1,8 @@
 # Types and Programming Languages: My OCaml implementation
 
-TODO: tests
+Run tests:
+
+```sh
+cd <folder>
+dune runtest
+```

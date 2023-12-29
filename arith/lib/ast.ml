@@ -6,4 +6,4 @@ type term =
   | TmSucc of term
   | TmPred of term
   | TmIsZero of term
-[@@deriving show]
+[@@deriving show, eq]
