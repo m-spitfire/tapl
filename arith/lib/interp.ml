@@ -60,9 +60,11 @@ let evalbig t =
 ;;
 
 let rec evalsmall t =
-  try
-    let t' = eval1 t in
-    evalsmall t'
-  with
-  | NoRuleApplies -> t
+  let t'opt =
+    try Some (eval1 t) with
+    | NoRuleApplies -> None
+  in
+  match t'opt with
+  | Some t' -> evalsmall t'
+  | None -> t
 ;;
