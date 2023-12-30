@@ -8,3 +8,8 @@ dune runtest
 # Run all the tests
 find . -name dune-project -execdir dune runtest \;
 ```
+
+## TODO:
+- Simplebool:
+  - write interp
+  - write tests
