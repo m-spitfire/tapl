@@ -5,4 +5,6 @@ Run tests:
 ```sh
 cd <folder>
 dune runtest
+# Run all the tests
+find . -name dune-project -execdir dune runtest \;
 ```
